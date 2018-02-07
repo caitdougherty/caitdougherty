@@ -202,31 +202,3 @@ body {}
             margin: 0 auto;
             width: 100%;
         }
-        
-        .thumb {
-            float: left;
-            /* must be floated for same cross browser position of larger image */
-            position: relative;
-            margin: 0.5em;
-        }
-        
-        .thumb img {
-            border: 0;
-            vertical-align: bottom;
-        }
-        
-        .thumb:hover {
-            border: 0;
-            z-index: 1;
-        }
-        
-        .thumb span {
-            position: absolute;
-            visibility: hidden;
-        }
-        
-        .thumb:hover span {
-            visibility: visible;
-            top: 1.5em;
-            left: 1.5em;
-        }

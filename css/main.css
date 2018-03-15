@@ -382,7 +382,7 @@ color: #f2f1ef;
 #contactform textarea {
 	height:100px;
 	max-width:100%;
-  resize:none;
+  /*resize:none;*/
 }
 #contactform input:focus, #contactform textarea:focus {
 	outline:0;

@@ -342,6 +342,7 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size:0.75em;
+color: #f2f1ef;
 }
 #contactform input[type="text"]:hover, #contactform input[type="email"]:hover, #contactform textarea:hover{
 	-webkit-transition:border-color 0.3s ease-in-out;

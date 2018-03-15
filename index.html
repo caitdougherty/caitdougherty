@@ -194,11 +194,11 @@
         <div id="box" role="complementary" style="margin-top:10%;">
         <h1 style="line-height: 0.5em;">Contact Me</h1>
             <div class="formbox">  
-<form id="contactform" method="POST">
+<form id="contactform"  action="//formspree.io/me@caitdougherty.com" method="POST">
     <input type="hidden" name="_subject" value="Website contact" />
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="_replyto" placeholder="Your email">
-    <textarea name="message" placeholder="Your message"></textarea>
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="_replyto" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send">
 </form>

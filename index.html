@@ -15,11 +15,9 @@
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-     COLORS AND TEXT 
     width: 100%;
-
     background-color: #111111;
-}		
+}
 .flex-fills {
     display: none;
 }
@@ -30,24 +28,26 @@
     display: inline-flex;
     justify-content: center;
     object-fit: cover;
-	padding:20vw;
+    padding: 20vw;
     z-index: 0;
+    overflow: hidden;/*	white-space: nowrap;*/
 }
-	.cent {
-    padding: 1em;
+.cent {
+    padding-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-	}
-	div a {
+}
+div a {
     text-decoration: none;
     position: absolute;
-    height: 100%;
+    height: 44vh;
     width: 100%;
     float: left;
     overflow: hidden;
+    margin-top: -21%;
     padding: 0;
     z-index: 3;
     background-color: rgba(25,25,25,0.75);
@@ -55,7 +55,6 @@
 div a:hover {
     background-color: rgba(25,25,25,0.28);
 }
-
 }
 
 @media screen and (min-width: 651px) {
@@ -126,7 +125,7 @@ div a:hover {
     position: static;
     z-index: 0;
 }
-	.cent {
+.cent {
     padding: 1em;
     display: flex;
     align-items: center;
@@ -134,7 +133,7 @@ div a:hover {
     text-align: center;
     width: 100%;
 }
-	div a {
+div a {
     text-decoration: none;
     display: block;
     position: absolute;
@@ -184,18 +183,16 @@ p {
     font-size: 1em;
 }
 a.con {
-	text-decoration: none;
+    text-decoration: none;
     display: block;
     margin-top: 0;
     background-color: rgba(0,0,0,0.00);
-	text-decoration: none;
+    text-decoration: none;
     position: relative;
     align-self: center;
     margin-top: -1px;
     z-index: 3;
-	}
-
-
+}
 </style>
 </head>
 
@@ -238,6 +235,9 @@ a.con {
       <h2>Mentor</h2>
     </div>
     </a> </div>
+  <div class="flex-item">
+    <h1>Design</h1>
+  </div>
   <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94310261830739.5a7b3b22ee153.png); background-position:60% 10%; "> <a href="https://www.behance.net/gallery/61830739/Typographic-Batman">
     <div class="cent">
       <h2>Typographic Batman</h2>
@@ -254,10 +254,7 @@ a.con {
       <h2>Bad Men Imperatives</h2>
     </div>
     </a> </div>
-  <div class="flex-item">
-    <h1>Design</h1>
-  </div>
-  <div class="flex-item">
+  <div class="flex-item" style="">
     <h1>Writing</h1>
   </div>
   <!-- Row 5 -->
@@ -276,6 +273,9 @@ a.con {
       <h2>He Got Ta Have His Supper!</h2>
     </div>
     </a> </div>
+  <div class="flex-item">
+    <h1>Projects</h1>
+  </div>
   <div class="flex-item" style="background-image: url(https://sophia.smith.edu/classmatters/wp-content/uploads/sites/50/2017/01/revisioning_welfare_98.jpg); background-position:50% 50%;"> <a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1OZwDqkkbp5_QqDZrAugJNBXF0LM97aCLLNy7qWdumQg&font=Default&lang=en&initial_zoom=2&height=650">
     <div class="cent">
       <h2>Class Matters</h2>
@@ -292,16 +292,13 @@ a.con {
       <h2>Computer Graphics</h2>
     </div>
     </a> </div>
-  <div class="flex-item">
-    <h1>Projects</h1>
-  </div>
   <div class="flex-fills"></div>
   <!-- Row 7 -->
   <div class="flex-item">
-	  <h2>me@caitdougherty.com</h2>	
-	</div>
-  <div class="flex-item">
     <h1>Contact</h1>
+  </div>
+  <div class="flex-item">
+    <h2>me@caitdougherty.com</h2>
   </div>
   <div class="flex-fills"></div>
 </div>

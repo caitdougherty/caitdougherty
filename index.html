@@ -1,214 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Cait Dougherty - Portfolio</title>
-    <meta name="author" content="Cait Dougherty">
-    <meta name="description" content="Portfolio of academic and artistic work.">
-    <meta name="keywords" content="Cait Dougherty,Caitlin Dougherty">
-    <link rel="shortcut icon" href="caitdougherty.github.io/cd_fav.ico" type="image/vnd.microsoft.icon">
-    <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="caitdougherty.github.io/css/main.css">
+<meta charset="utf-8">
+<title>Cait Dougherty</title>
+<link href="https://fonts.googleapis.com/css?family=Cormorant:400i|Hind:300|Inknut+Antiqua&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+/*	480, 600, 768, 992, and 1382*/
+@media screen and (max-width: 650px) {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+     COLORS AND TEXT 
+    width: 100%;
+
+    background-color: #111111;
+}		
+.flex-fills {
+    display: none;
+}
+.flex-item {
+    flex: 1 0 20%;
+    align-self: stretch;
+    border: thin solid rgba(48,48,48,.25);
+    display: inline-flex;
+    justify-content: center;
+    object-fit: cover;
+	padding:20vw;
+    z-index: 0;
+}
+	.cent {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+	}
+	div a {
+    text-decoration: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    z-index: 3;
+    background-color: rgba(25,25,25,0.75);
+}
+div a:hover {
+    background-color: rgba(25,25,25,0.28);
+}
+
+}
+
+@media screen and (min-width: 651px) {
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* COLORS AND TEXT */
+    width: 100%;
+    height: 100vh;
+    background-color: #111111;
+}
+.flex-fills {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 20%;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    /* COLORS AND TEXT */
+
+    min-height: 49%;
+    min-width: 20%;
+    border: thin solid rgba(48,48,48,.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    z-index: 0;
+}
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 20%;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    /* COLORS AND TEXT */
+
+    min-height: 49%;
+    min-width: 20%;
+    border: thin solid rgba(48,48,48,.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    position: static;
+    z-index: 0;
+}
+	.cent {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+	div a {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    display: flex;
+    align-self: stretch;
+    height: 49.5%;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-top: -1px;
+    z-index: 3;
+    background-color: rgba(25,25,25,0.75);
+}
+div a:hover {
+    background-color: rgba(25,25,25,0.28);
+}
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    background-color: #111111;
+}
+h1 {
+    color: #DDDDDD;
+    text-shadow: 0.75px 0.75px 3px #0d0d0d;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+h2 {
+    color: #DDDDDD;
+    text-shadow: 0.75px 0.75px 3px #0d0d0d;
+    font-family: 'Cormorant', serif;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+h2 a {
+    text-decoration: none;
+}
+p {
+    color: #DDDDDD;
+    text-shadow: 0.5px 0.5px 2px #0d0d0d;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+</style>
 </head>
 
 <body>
-    <div id="nav">
-        <ul class="navi">
-            <li class="navL"><a class="nav" href="#home">Home</a></li>
-            <li class="navL"><a class="nav" href="#projects">Projects</a></li>
-            <li class="navL"><a class="nav" href="#contact">Contact</a></li>
-        </ul>
+<div class="flex-container">
+  <div class="flex-fills"></div>
+  <!-- Row 1 -->
+  <div class="flex-fills"></div>
+  <div class="flex-item">
+    <h1>Cait Dougherty</h1>
+  </div>
+  <div class="flex-fills"></div>
+  <div class="flex-fills"></div>
+  <!-- Row 2 -->
+  <div class="flex-item">
+    <h1>About</h1>
+  </div>
+  <div class="flex-item">
+    <div class="cent">
+      <p>I'm Cait Dougherty. I'm a recent graduate of Smith College with a B.A. in Anthropology and extensive coursework in Book Studies.</p>
     </div>
-    <a name="home">
-        <div id="home">
-    </a>
-    <div id="box" role="main">
-        <h1> Hello, I am Cait Dougherty. I am a full-time student of <a href="https://www.smith.edu/anthro/"  tabindex="1">Anthropology</a>, <a href="https://www.smith.edu/arch/">Archaeology</a>, and <a href="https://www.smith.edu/bookstudies/">Book Studies</a> at <a href="https://www.smith.edu/">Smith College</a> in Northampton, Massachusetts.</h1>
+  </div>
+  <div class="flex-fills"> </div>
+  <div class="flex-item">
+    <h1>Print</h1>
+  </div>
+  <!-- Row 3 -->
+  <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/030de263169383.5abfe1eb514ae.jpg); background-position:40% 10%; "> <a href="https://www.behance.net/gallery/63169383/This-Bitter-Earth">
+    <div class="cent">
+      <h2>This Bitter Earth</h2>
     </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/04207b63168979.5aa813850fc4d.png); background-position:40% 10%; "> <a href="https://www.behance.net/gallery/63168979/A-Vision-of-Venus">
+    <div class="cent">
+      <h2>A Vision of Venus</h2>
     </div>
-    <div id="portfolio">
-        <a name="projects"></a>
-        <div id="box" style="margin-top:10%;">
-            <div class="table">
-                <div class="tbody">
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Spring 2014</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme1"><h3>DIGITAL DESIGN:</h3>
-                          Digital Imaging Fundamentals w/ Photoshop (Indian River State College - DIG 1115)</a>
-                                <ul class="showme" id="showme1">
-                                    <li>
-                                        <p>Final project submission for this intermediate digital media class. Awarded <a href="https://issuu.com/yourvoicenews/docs/stluciewest-5-2-2014/21">First Place Associate Degree Honors in Typography</a> at the 14th Annual Digital Media Exhibition at Indian River State College.</p>
-                                        <div id="thumbwrap">
-                                            <a href="https://www.behance.net/gallery/61830739/Typographic-Batman" target="new">
-                                                <img src="caitdougherty.github.io/batman_thumb.png" alt="Batman Thumbnail">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Fall 2016</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme4"><h3>CODING:</h3>
-                          Computer Graphics (Smith College - CSC 240)</a>
-                                <ul class="showme" id="showme4">
-                                    <li>
-                                        <p>An OpenGL program that displays an animated, lighted solar system and which had to minimally consist of the Sun, the Earth orbiting the sun, and the Moon orbiting the earth, all controlled using hierarchical models. </p>
-                                        <div id="thumbwrap">
-                                            <p data-height="300" data-theme-id="32859" data-slug-hash="QmEGxG" data-default-tab="result" data-user="cdougherty" data-embed-version="2" data-pen-title="OpenGL Solar System" class="codepen">See the Pen <a href="https://codepen.io/cdougherty/pen/QmEGxG/">OpenGL Solar System</a> by Cait Dougherty (<a href="https://codepen.io/cdougherty">@cdougherty</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                                        </div>
-                                        <p>A texture-mapped chess piece produced in Blender from one continuous shape.</p>
-                                        <div id="thumbwrap">
-                                            <a href="caitdougherty.github.io/hw9_chess.png" target="new">
-                                                <img src="caitdougherty.github.io/chess_thumb.png" alt="Pawn Thumbnail">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme5"><h3>RESEARCH:</h3>
-                          Translating New Worlds (Smith College - ARH 207)</a>
-                                <ul class="showme" id="showme5">
-                                    <li>
-                                        <p>An extended catalogue entry on an object from the Smith College Museum of Art. I chose a west Mexican shaft tomb figurine.
-                                        </p>
-                                        <div id="thumbwrap">
-                                            <a href="caitdougherty.github.io/figure_research.pdf" target="new">
-                                                <img src="caitdougherty.github.io/fig_thumb.png" alt="Shaft Tomb Figurine">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Spring 2016</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme6"><h3>DIGITAL DESIGN:</h3>
-                           Colloquium: The Art and History of the Book (Smith College - ARH 247)</a>
-                                <ul class="showme" id="showme6">
-                                    <li>
-                                        <p>An open-ended final project that briefly examines the impact of gender on cover designs for books and features a redesign of the 1853 book <i>Heroines of the Crusades</i> by C. A. Bloss (a woman).
-                                        </p>
-                                        <div id="thumbwrap">
-                                            <a href="caitdougherty.github.io/heroines_book.pdf" target="new">
-                                                <img src="caitdougherty.github.io/heroines_dbl.png" alt="Heroines Covers">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Interterm 2017</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme7"><h3>RESEARCH:</h3>
-                          Class Matters: Organizing for Economic Justice (Smith College - ARX 105) Timeline&nbsp</a>
-                                <ul class="showme" id="showme7">
-                                    <li>
-                                        <p><a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1OZwDqkkbp5_QqDZrAugJNBXF0LM97aCLLNy7qWdumQg&font=Default&lang=en&initial_zoom=2&height=650">A collaborative digital timeline</a> produced using archival materials about economic justice from the Sophia Smith Collection at Smith College. My entry is titled "A Call for Representation in Welfare Rights Activism."</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Spring 2017</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme8"><h3>RESEARCH:</h3>
-                          Artifacts of Daily Life in the Ancient Mediterranean (Smith College - CSC 237) Timeline</a>
-                                <ul class="showme" id="showme8">
-                                    <li>
-                                        <p>A <a href="https://sophia.smith.edu/cls237-sp17/narrative-descriptions/sixth-century-bce-etrusco-corinthian-olpe/corinthian-jug/">solo timeline</a> of the lifespan of an Etrusco-Corinthian olpe from Smith College's Van Buren Collection produced over the course of the semester. <a href="https://sophia.smith.edu/cls237-sp17/narrative-descriptions/sixth-century-bce-etrusco-corinthian-olpe/">Included</a> is a narrative (italicized) portion which is an imaginative account of the life of the object, and a research (non-italicized) portion which provides a traditional account of the object's creation and travel.</li>
-                                </ul>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="cell">
-                            <h2>Fall 2017</h2>
-                        </div>
-                        <div class="cell">
-                            <li><a class="show" href="#showme9"><h3>BOOK STUDIES:</h3>
-                          The Book: Theory and Practice (Smith College - ARS 275)</a>
-                                <ul class="showme" id="showme9">
-                                    <li>
-                                        <p> Three projects produced over the course of the semester: a book that eschewed the form of the traditional codex, a more traditional codex-like book produced collaboratively, and a two-color print job. All materials printed on a Vandercook SP15 press.</p>
-                                        <div id="thumbwrap">
-                                            <a href="https://www.behance.net/gallery/63168979/A-Vision-of-Venus" target="new">
-                                                <img src="caitdougherty.github.io/venus_thumb.png " alt="A Vision of Venus Thumbnail&nbsp">
-                                            </a>
-                                            <a href="https://www.behance.net/gallery/63168337/Gnite-Fck-os" target="new">
-                                                <img src="caitdougherty.github.io/gnf_thumb.png " alt="G'nite Thumbnail&nbsp">
-                                            </a>
-                                            <a href="https://www.behance.net/gallery/63169383/This-Bitter-Earth" target="new">
-                                                <img src="caitdougherty.github.io/tbe_thumb.png " alt="This Bitter Earth Thumbnail&nbsp">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Table-->
-        </div>
-        <!--Box-->
-        <br>
-        <br>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/8cd13c82879469.5d2b69535ee9b.jpg);background-position:40% 80%;"> <a href="https://www.behance.net/gallery/82879469/Mentor">
+    <div class="cent">
+      <h2>Mentor</h2>
     </div>
-    <!--Portfolio-->
-
- 
-    <div id="contact">
-        <a name="contact"></a>
-        <div id="box" role="complementary" style="margin-top:10%;">
-        <h1 style="line-height: 0.5em;">Contact Me</h1>
-            <div class="formbox">  
-<form id="contactform"  action="//formspree.io/me@caitdougherty.com" method="POST">
-    <input type="hidden" name="_subject" value="Website contact" />
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="_replyto" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message" required></textarea>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
-</form>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94310261830739.5a7b3b22ee153.png); background-position:60% 10%; "> <a href="https://www.behance.net/gallery/61830739/Typographic-Batman">
+    <div class="cent">
+      <h2>Typographic Batman</h2>
+    </div>
+    </a> </div>
+  <!-- Row 4 -->
+  <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1d23af82783661.5d27c2a4233be.jpg); background-position:40% 30%;"> <a href="https://www.behance.net/gallery/82783661/Here-the-technofetish">
+    <div class="cent">
+      <h2>Technofetish</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/77e8c482785809.5d27d9a60dc79.jpg); background-position:75% 10%;"> <a href="https://www.behance.net/gallery/82785809/Imperatives">
+    <div class="cent">
+      <h2>Bad Men Imperatives</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item">
+    <h1>Design</h1>
+  </div>
+  <div class="flex-item">
+    <h1>Writing</h1>
+  </div>
+  <!-- Row 5 -->
+  <div class="flex-item" style="background-image: url(XXX)"> <a href="https://www.scribd.com/document/417301774/This-is-Broken-Disability-at-Smith-College-Recommendations-for-Administration?secret_password=8CuzNxGuCsPLHAPTGuHf">
+    <div class="cent">
+      <h2>This Is Broken</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(XXX)"> <a href="https://www.scribd.com/document/417300694/Lorem-Ipsum-Latin-As-A-Placeholder-For-Dark-Magic-In-Chilling-Adventures-of-Sabrina-2018?secret_password=rctr3NbLzqUpSwLpOljD">
+    <div class="cent">
+      <h2>Lorem Ipsum</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(XXX)"> <a href="https://www.scribd.com/document/417298911/He-Got-Ta-Have-His-Supper-The-Culture-of-the-Deep-South-in-Resident-Evil-VII-Biohazard?secret_password=wlEJAD8OSGr4c6sDUL4l">
+    <div class="cent">
+      <h2>He Got Ta Have His Supper!</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(https://sophia.smith.edu/classmatters/wp-content/uploads/sites/50/2017/01/revisioning_welfare_98.jpg); background-position:50% 50%;"> <a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1OZwDqkkbp5_QqDZrAugJNBXF0LM97aCLLNy7qWdumQg&font=Default&lang=en&initial_zoom=2&height=650">
+    <div class="cent">
+      <h2>Class Matters</h2>
+    </div>
+    </a> </div>
+  <!-- Row 6 -->
+  <div class="flex-item" style="background-image: url(https://sophia.smith.edu/cls237-sp17/wp-content/uploads/sites/70/2017/05/20170504_1022461.jpg); background-position:50% 50%;"> <a href="https://sophia.smith.edu/cls237-sp17/narrative-descriptions/sixth-century-bce-etrusco-corinthian-olpe/corinthian-jug/">
+    <div class="cent">
+      <h2>Etrusco-Corinthian Olpe</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item" style="background-image: url(XXX)"> <a href="https://s.codepen.io/cdougherty/fullembedgrid/QmEGxG?type=embed&animations=run">
+    <div class="cent">
+      <h2>Computer Graphics</h2>
+    </div>
+    </a> </div>
+  <div class="flex-item">
+    <h1>Projects</h1>
+  </div>
+  <div class="flex-fills"></div>
+  <!-- Row 7 -->
+  <div class="flex-item"> info info info </div>
+  <div class="flex-item">
+    <h1>Contact</h1>
+  </div>
+  <div class="flex-fills"></div>
 </div>
-    </div>
-                <footer style="text-align:center;">
-  <p style="color:#e0e0e0; font-size: 0.75em">Created by Cait Dougherty, 2018. The typefaces are Questrial and Roboto Condensed.</p>
-            <p style="color:#e0e0e0;font-size: 0.75em"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-</footer> 
-    </div>
 </body>
-
 </html>

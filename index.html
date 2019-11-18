@@ -55,6 +55,7 @@ div a {
 div a:hover {
     background-color: rgba(25,25,25,0.28);
 }
+    
 }
 
 @media screen and (min-width: 651px) {
@@ -150,6 +151,7 @@ div a {
 div a:hover {
     background-color: rgba(25,25,25,0.28);
 }
+    
 }
 body {
     padding: 0;
@@ -182,21 +184,24 @@ p {
     font-weight: 300;
     font-size: 1em;
 }
-a.con {
+h3 a {
     text-decoration: none;
-    display: block;
-    margin-top: 0;
-    background-color: rgba(0,0,0,0.00);
-    text-decoration: none;
+    background-color: rgba(0,0,0,0);
     position: relative;
-    align-self: center;
-    margin-top: -1px;
-    z-index: 3;
-}
-    a.n{
-    text-decoration: none;
     display: block;
-    }
+    height: auto;
+    width: auto;
+    color: #DDDDDD;
+    text-shadow: 0.75px 0.75px 3px #0d0d0d;
+    font-family: 'Cormorant', serif;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+h3 a:hover {
+    text-decoration: none;
+    background-color: rgba(25,25,25,0.75);
+}    
 </style>
 </head>
 
@@ -302,8 +307,8 @@ a.con {
     <h1>Contact</h1>
   </div>
   <div class="flex-item">
-      <a class="n" href="https://www.linkedin.com/in/cait-dougherty/"><h2>LinkedIn</h2></a>
-      <a class="n" href="https://www.behance.net/cait-dougherty"><h2>Behance</h2></a>
+      <h3><a href="https://www.linkedin.com/in/cait-dougherty/">LinkedIn&nbsp;&#183;</a></h3>
+      <h3><a href="https://www.behance.net/cait-dougherty">&nbsp;Behance</a></h3>
   </div>
   <div class="flex-fills"></div>
 </div>
